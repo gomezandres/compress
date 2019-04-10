@@ -23,7 +23,6 @@ public class CompressorServiceImpl implements CompressorService {
 			if (!(position + 1 == letters.length)) {
 				if (!(letters[position].equals(letters[position + 1]))) {
 					compressed = append(letters[position]);
-					clearAccumulator();
 				} else {
 					accumulator += letters[position];
 				}
