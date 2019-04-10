@@ -33,20 +33,10 @@ _Response_
    
 **2 - Compresor**
   
-**Periodos de lluvia:**
 
 _Request_
     
     curl -X POST --header 'Content-Type: application/json' --header 'Accept: application/json' -d '{ \"value": "AAABBAAAAABBBCCCCCCCCAAAAA" \}' 'https://compressor-237218.appspot.com/compress'
-
-_Response_
-
-    {"cantidad": 814}
-**Día con pico máximo de lluvia:**
-
-_Request_
-
-    curl -X GET --header 'Accept: application/json' 'https://solarium-222019.appspot.com/lluvia/maximaintensidad'
 
 _Response_
 
