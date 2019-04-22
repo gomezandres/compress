@@ -1,0 +1,12 @@
+<h3>Compresor</h3>
+
+<div class="form-group">
+            <label for="texto">Cadena a comprimir: </label>
+            <input type="text" [(ngModel)]="texto">
+           
+            <button (click)="compress()">Click me!</button>
+</div>
+
+<div class="form-group">
+            <label for="texto">Resultado: {{compressed}}</label>
+</div>
