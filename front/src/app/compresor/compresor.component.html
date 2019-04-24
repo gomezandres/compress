@@ -1,12 +1,36 @@
-<h3>Compresor</h3>
-
-<div class="form-group">
+<!-- <div class="form-group">
             <label for="texto">Cadena a comprimir: </label>
             <input type="text" [(ngModel)]="texto">
            
             <button (click)="compress()">Click me!</button>
-</div>
+</div> -->
 
-<div class="form-group">
-            <label for="texto">Resultado: {{compressed}}</label>
+
+
+<div class="container-fluid" >
+  <br/>
+	<div class="card w-90">
+	  <div class="card-body">
+	    <h5 class="card-title">Compresor</h5>
+	    <p class="card-text">Servicio para comprimir una cadena de texto. La misma está compuesta únicamente por letras. La comprensión debe hacerse de modo que:</p>
+	    <p>
+	               "AAABBAAAAABBBCCCCCCCCAAAAA" = "3A2B5A3B8C5A"
+				</p>
+	   <div class="form-group">					 
+						<label for="texto">
+						 <strong>	Texto a comprimir </strong>
+						</label>
+						<input type="text" class="form-control" [(ngModel)]="texto">
+					</div>
+					<button type="submit" class="btn btn-success btn-sm" size="small" (click)="compress()">
+						Comprimir
+					</button>
+					<br/>
+					<br/>
+					<label for="texto">
+						 <strong>Resultado</strong>
+					</label>
+					<input type="text" class="form-control" disabled [(ngModel)]="compressed">
+	  </div>
+	</div>
 </div>

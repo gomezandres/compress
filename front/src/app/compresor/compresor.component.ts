@@ -1,15 +1,17 @@
 import { Component, OnInit } from '@angular/core';
-import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { HttpClient, HttpHeaders  } from '@angular/common/http';
+import {Observable,HttpErrorResponse } from 'rxjs/Rx';
 
 
 
 const httpOptions = {
   headers: new HttpHeaders(
   {'Content-Type': 'application/json'},
-  {'Content-Type':'application/json'},{'Access-Control-Allow-Origin':'*'},
+  {'Content-Type':'application/json'},
+  {'Access-Control-Allow-Origin':'*'},
   {'Access-Control-Allow-Headers':'Content-Type'}
   ),
-	observe: 'response',
+	observe: 'body',
 	responseType: 'json'
 }
 
